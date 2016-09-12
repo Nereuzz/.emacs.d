@@ -1,0 +1,44 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Latex Default
+# key: templOpg
+# binding: 
+# --
+
+\documentclass[a4paper]{article}
+\usepackage[danish]{babel}
+\usepackage{amssymb,amsfonts,multicol,enumerate,graphicx,latexsym,fancyhdr,setspace,graphicx,hyperref,amsthm,amsmath,framed}
+\usepackage[utf8]{inputenc}
+
+\pagenumbering{arabic}
+\usepackage{hyperref}
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+
+%layout
+\usepackage[margin=1in]{geometry}
+\pagestyle{fancy}
+\parskip 2mm
+\parindent 0pt
+\linespread{1.5}
+
+%Header
+\setlength{\headheight}{15.2pt}
+\renewcommand{\subsectionmark}[1]{
+  \ifsubsectioninheader
+    \def\subsectiontitle{: #1}
+  \else
+    \def\subsectiontitle{}
+  \fi}
+\newif\ifsubsectioninheader
+\def\subsectiontitle{}
+\fancyhead[L]{Navn, institut \\ Titel/opgave \\ Dato\nouppercase{\ifsubsectioninheader\subsectiontitle\fi}}
+
+%Info
+\title{Papir-titel}
+\author{Peter Thomsen}
+
+%Content
+\begin{document}
+
+\end{document}
