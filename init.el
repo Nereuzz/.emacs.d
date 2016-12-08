@@ -63,9 +63,13 @@
 ;;replace "yes" and "no" with y and n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+
 ;;Keybindings - fix 2 meta keys problem (2 ALT keys)
 (setq mac-option-key-is-meta t)
 (setq mac-right-option-modifier nil)
+(global-set-key (kbd "C-;") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
 
 ; load customizations
 (add-hook 'after-init-hook '(lambda ()
