@@ -24,6 +24,8 @@
 			  solarized-theme
 			  spacemacs-theme
 			  undo-tree
+			  auto-complete
+			  yasnippet
 			  )
   "Default packages")
 
@@ -85,3 +87,13 @@
 
 ;; undo-tree mode
 (global-undo-tree-mode)
+(put 'set-goal-column 'disabled nil)
+
+;;latexmk fix
+(exec-path-from-shell-initialize)
+(getenv "PATH")
+ (setenv "PATH"
+(concat
+"/Library/TeX/texbin/latex" ":"
+
+(getenv "PATH")))
