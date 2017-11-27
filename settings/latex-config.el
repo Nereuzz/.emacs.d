@@ -28,7 +28,7 @@
 ;; option -b highlights the current line; option -g opens Skim in the background  
 (setq TeX-view-program-selection '((output-pdf "PDF Viewer")))
 (setq TeX-view-program-list
-      '(("PDF Viewer" "/Applications/Skim.app/Contents/SharedSupport/displayline -b -g %n %o %b")))
+      '(("PDF Viewer" "open -a Preview %o")))
 
 
 
