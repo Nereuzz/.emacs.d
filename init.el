@@ -14,6 +14,7 @@
 
 (setq package-archive-enable-alist '(("melpa" deft magit)))
 (defvar peter/packages '(autopair
+			  emojify
                           fsharp-mode
 			  auctex
 			  flycheck
@@ -26,6 +27,7 @@
 			  undo-tree
 			  auto-complete
 			  yasnippet
+			  neotree
 			  )
   "Default packages")
 
