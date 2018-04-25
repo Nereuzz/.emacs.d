@@ -71,6 +71,7 @@
 ;;Keybindings - fix 2 meta keys problem (2 ALT keys)
 (setq mac-option-key-is-meta t)
 (setq mac-right-option-modifier nil)
+(global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-;") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
