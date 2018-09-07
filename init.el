@@ -10,9 +10,10 @@
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
 
-(setq package-archive-enable-alist '(("melpa" deft magit)))
+(setq package-archive-enable-alist '(("melpa" magit f)))
+
 (defvar peter/packages '(autopair
 			  emojify
                           fsharp-mode
@@ -28,6 +29,7 @@
 			  auto-complete
 			  yasnippet
 			  neotree
+			  haskell-mode
 			  )
   "Default packages")
 
@@ -110,5 +112,9 @@
  )
 
 
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
+;; Delete backup-files
+(setq make-backup-files nil)
+
+;; indent options
+(setq tab-width 2
+      indent-tabs-mode nil)
