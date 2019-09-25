@@ -1,120 +1,147 @@
+;; If you ever forget who you are
 (setq user-full-name "Peter Thomsen")
-(setq user-mail-address "thomsenpeter1995@hotmail.com")
+(setq user-mail-address "pt@zangenberg.biz")
 
+;; Just copied path settings..
 (setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin" (getenv "PATH")))
+(setq exec-path (append exec-path '("/usr/local/bin")))
 (require 'cl)
 
-;;Package-manager
+;; PACKAGES!!!!! <3<3<3
 (load "package")
 (package-initialize)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
-(setq package-archive-enable-alist '(("melpa" magit f)))
-
-(defvar peter/packages '(autopair
-			  emojify
-                          fsharp-mode
-			  auctex
-			  flycheck
-			  gist
-			  graphviz-dot-mode
-			  magit
-			  marmalade
-			  solarized-theme
-			  spacemacs-theme
-			  undo-tree
-			  auto-complete
-			  yasnippet
-			  neotree
-			  haskell-mode
-			  )
+(defvar peter/packages '(auto-complete
+                         autopair
+                         flycheck
+                         magit
+                         markdown-mode
+                         org
+			 spacemacs-theme
+			 )
   "Default packages")
 
+;; Install and check for updates on emacs startup
 (defun peter/packages-installed-p ()
   (loop for pkg in peter/packages
         when (not (package-installed-p pkg)) do (return nil)
         finally (return t)))
 
- (unless (peter/packages-installed-p)
-   (message "%s" "Refreshing package database...")
-   (package-refresh-contents)
-   (dolist (pkg peter/packages)
-     (when (not (package-installed-p pkg))
-       (package-install pkg))))
+(unless (peter/packages-installed-p)
+  (message "%s" "Refreshing package database...")
+  (package-refresh-contents)
+  (dolist (pkg peter/packages)
+    (when (not (package-installed-p pkg))
+      (package-install pkg))))
 
-;; Initial start
+;; We dont need no gui! I'm pro..
 (setq inhibit-splash-screen t
       initial-scratch-message nil
       initial-major-mode 'org-mode)
 
-;;Disable scrollbar
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
 
-;;Theme
-(if window-system
-    (load-theme 'solarized-dark t)
-  (load-theme 'wombat t))
-
-;;Marking text
+;; Make marking behavior understandable to humans
 (delete-selection-mode t)
 (transient-mark-mode t)
 (setq x-select-enable-clipboard t)
 
-;;replace "yes" and "no" with y and n
+;; Empty line markers
+(setq-default indicate-empty-lines t)
+(when (not indicate-empty-lines)
+  (toggle-indicate-empty-lines))
+
+;; No tabs - indent with 2
+(setq tab-width 2
+      indent-tabs-mode nil)
+
+;; Ain't got time to write yes/no - replace with y/n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-
-;;Keybindings - fix 2 meta keys problem (2 ALT keys)
-(setq mac-option-key-is-meta t)
-(setq mac-right-option-modifier nil)
+;; Neat bindings
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-;") 'comment-or-uncomment-region)
+(global-set-key (kbd "M-/") 'hippie-expand)
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key (kbd "C-c C-k") 'compile)
+(global-set-key (kbd "C-x g") 'magit-status)
+
+;; Don't yell when I do something wrong..
+(setq echo-keystrokes 0.1
+      use-dialog-box nil
+      visible-bell t)
+
+;; Please go away temporary files
+(setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+
+
+;; Init flyspell - spellchecker
+(setq flyspell-issue-welcome-flag nil)
+(if (eq system-type 'darwin)
+    (setq-default ispell-program-name "/usr/local/bin/aspell")
+  (setq-default ispell-program-name "/usr/bin/aspell"))
+(setq-default ispell-list-command "list")
+
+;; THEME SETTINGS
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+
+;; Cycle through this set of themes
+(setq my-themes '(spacemacs-dark spacemacs-light))
+(setq spacemacs-theme-comment-bg nil)
+
+(setq my-cur-theme nil)
+(defun cycle-my-theme ()
+  "Cycle through a list of themes, my-themes"
+  (interactive)
+  (when my-cur-theme
+    (disable-theme my-cur-theme)
+    (setq my-themes (append my-themes (list my-cur-theme))))
+  (setq my-cur-theme (pop my-themes))
+  (load-theme my-cur-theme t))
+
+;; Switch to the first theme in the list above
+(cycle-my-theme)
+
+;; Bind this to C-t
+(global-set-key (kbd "C-x t") 'cycle-my-theme)
+
+;; Start to move configuration out to files
 
 ; load customizations
 (add-hook 'after-init-hook '(lambda ()
                               (load "~/.emacs.d/settings/general-config.el")
-                              (load "~/.emacs.d/settings/latex-config.el")
-                              (load "~/.emacs.d/settings/theme-config.el")
-                              (load "~/.emacs.d/settings/startup-config.el")
-                              (load "~/.emacs.d/settings/python-config.el")
+			      (load "~/.emacs.d/settings/startup-config.el")
                               ))
 
-;; Bind comment region to C-;
-(global-set-key (kbd "C-;") 'comment-region)
 
-;; undo-tree mode
-(global-undo-tree-mode)
-(put 'set-goal-column 'disabled nil)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
+ '(TeX-view-program-list nil)
+ '(TeX-view-program-selection
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+    (((output-dvi has-no-display-manager)
+      "dvi2tty")
+     ((output-dvi style-pstricks)
+      "dvips and gv")
+     (output-dvi "xdvi")
+     (output-pdf "Okular")
+     (output-html "xdg-open"))))
  '(package-selected-packages
    (quote
-    (exec-path-from-shell auctex-latexmk yasnippet undo-tree spacemacs-theme solarized-theme neotree marmalade magit graphviz-dot-mode gist fsharp-mode emojify autopair auto-complete auctex))))
+    (cuda-mode multiple-cursors auctex yasnippet spacemacs-theme markdown-mode magit flycheck autopair auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-
-;; Delete backup-files
-(setq make-backup-files nil)
-
-;; indent options
-(setq tab-width 2
-      indent-tabs-mode nil)

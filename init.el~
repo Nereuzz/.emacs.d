@@ -1,0 +1,10 @@
+;; If you ever forget who you are
+(setq user-full-name "Peter Thomsen")
+(setq user-mail-address "pt@zangenberg.biz")
+
+;; Just copied path settings..
+(setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin" (getenv "PATH")))
+(setq exec-path (append exec-path '("/usr/local/bin")))
+(require 'cl)
+
+

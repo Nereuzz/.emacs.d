@@ -1,3 +1,4 @@
+
 ;;Spellchecker - english and danish
 (setq ispell-program-name "aspell")
 (setq ispell-program-name "aspell"
@@ -10,22 +11,6 @@
         `((nil ,@default)
           ("english" ,@default))))
 
-;;;;;;;;;;
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;; Auto-Pair
  (defun autopair-insert-opening ()
@@ -38,20 +23,19 @@
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 
-;;Remove Backup Files
+;; Go to hell backup files..
 (setq make-backup-files nil)
 
-;;Highlight Parenthesis
+;; highlight parens
 (show-paren-mode t)
 
-;;Aspell
-(setq exec-path (append "/usr/local/Cellar/aspell/0.60.6.1" exec-path))
 
 ;;Display time
 (display-time-mode 1)
 (setq display-time-string-forms
        '((propertize (concat " " 24-hours ":" minutes " ")
 		     'face 'egoge-display-time)))
+
 
 ;; yasnippet
 (require 'yasnippet)
@@ -70,3 +54,10 @@
 
 ;; Load "hl-mode"
 (global-hl-line-mode)
+
+;; futhark mode
+(add-to-list 'load-path "~/.emacs.d/futhark-mode")
+(require 'futhark-mode)
+
+;; Column numbers plzz
+(setq column-number-mode t)

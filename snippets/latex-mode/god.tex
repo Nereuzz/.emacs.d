@@ -1,0 +1,80 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Gode gamle du
+# key: templOpg1
+# binding: 
+# --
+
+\documentclass[a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Package for making LaTeX properly handle utf8 characters set and danish language rules
+\usepackage[utf8]{inputenc}
+\usepackage[danish]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Package for changing to a nicer font 
+\usepackage [T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Package for conctroling the text area
+\usepackage[margin=2.5cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Package for inserting clickable hyperlinks in pdf versions as produced by pdflatex
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Package for including figures. TeX and thus LaTeX was developped before the existence of directory file-structures, but the graphicspath let's you add directories, that the \includegraphics will search.
+\usepackage{graphicx}
+\graphicspath{{figures/}{anotherFigureDirectory/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Package for typesetting programs. Listings does not support fsharp, but a little modification goes a long way
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{bluekeywords}{rgb}{0.13,0.13,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{turqusnumbers}{rgb}{0.17,0.57,0.69}
+\definecolor{redstrings}{rgb}{0.5,0,0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Package for extended math settings, e.g. \eqref
+\usepackage{amsmath}
+\usepackage{ amssymb }
+
+
+\newcommand\til{\sim }
+\newcommand\la{\langle}
+\newcommand\ra{\rangle}
+\newcommand\da{\downarrow}
+\newcommand\E{\mathcal{E}}
+\newcommand\s{\mathcal{S}}
+\newcommand\h{\mathcal{H}}
+\newcommand\Ss{\mathcal{S}\mathcal{S}}
+\newcommand\hs{\hspace{1cm}}
+\newcommand\q{\sigma}
+\newcommand\rar{\rightarrow}
+\newcommand\x{\times}
+
+\def\*#1{\mathbf{#1}}
+
+
+\setlength\parindent{0pt}
+
+\title{Semantics \& Types - Assignment 3}
+\author{Peter Thomsen - hdg350}
+
+\begin{document}
+
+\maketitle
+\hrulefill
+
+\section{`yas-selected-text`$0}
+
+\hrulefill
+\begin{center}
+  \textit{End of assignment}
+\end{center}
+
+\end{document}

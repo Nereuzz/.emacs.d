@@ -1,13 +1,12 @@
-;;Load IDO on startup
-(require 'ido)
+;; Load Ido-mode on startup
 (ido-mode t)
+(setq ido-enable-flex-matching t
+      ido-use-virtual-buffers t)
 
-;;Load auto-complete-mode
-(require 'auto-complete)
-(global-auto-complete-mode t)
+;; Auto-complete
+(require 'auto-complete-config)
+(ac-config-default)
 
-;;Load column number
-(setq column-number-mode t)
 
 ;;Remove temporary files
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))

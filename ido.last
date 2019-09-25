@@ -1,0 +1,166 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/resubmission/w1-code-handin/" . "task3/")
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/resubmission/" . "w1-code-handin/")
+ ("/home/peter/Downloads/" . "w2-code-handin/")
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/w2-code-handin/" . "spMV-test/")
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/" . "w2-code-handin/")
+ ("/home/peter/Documents/DIKU/9semester/aad/" . "3assignment/")
+ ("/ssh:gpu:PMPH/assignments/1assignment/" . "w1-code-handin/")
+ ("/ssh:gpu:PMPH/assignments/" . "1assignment/")
+ ("/ssh:gpu:PMPH/" . "assignments/")
+ ("/ssh:gpu:" . "PMPH/")
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/" . "task3/")
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/" . "resubmission/")
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/" . "2assignment/")
+ ("/home/peter/Documents/DIKU/9semester/pmph/" . "assignments/")
+ ("/" . "usr/")
+ ("/home/peter/.emacs.d/snippets/" . "latex-mode/")
+ ("/home/peter/.emacs.d/" . "settings/")
+ ("/home/peter/Documents/DIKU/9semester/AAD/" . "1assignment/")
+ ("/home/peter/Documents/DIKU/9semester/" . "aad/")
+ ("/home/peter/Documents/DIKU/" . "9semester/")
+ ("/home/peter/Documents/" . "DIKU/")
+ ("/home/peter/.ssh/" . "ssh/")
+ ("/home/peter/.config/" . "i3/")
+ ("/home/peter/" . "Documents/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/peter/Documents/DIKU/9semester/aad/3assignment/"
+ "/home/peter/.config/i3/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/w2-code-handin/spMV-test/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/resubmission/w1-code-handin/task3/"
+ "/home/peter/Downloads/w2-code-handin/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/report/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/w2-code-handin/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/"
+ "/home/peter/Documents/DIKU/9semester/pmph/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/"
+ "/home/peter/.config/i3status/"
+ "/home/peter/.emacs.d/"
+ "/home/peter/Documents/DIKU/9semester/aad/2assignment/"
+ "/home/peter/.emacs.d/settings/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/task3/"
+ "/home/peter/.ssh/"
+ "/ssh:gpu:PMPH/assignments/1assignment/w1-code-handin/cuda/task3/"
+ "/ssh:gpu:PMPH/assignments/1assignment/w1-code-handin/task3/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/report/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/primes/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/lssp/"
+ "/home/peter/.emacs.d/futhark-mode/"
+ "/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/"
+ "/home/peter/Documents/DIKU/9semester/AAD/1assignment/"
+ "/home/peter/Documents/DIKU/9semester/1assignment/"
+ "/home/peter/.emacs.d/snippets/latex-mode/"
+ "/home/peter/Downloads/"
+ "/home/peter/"
+ "/home/peter/.ssh/ssh/"
+ "/home/peter/.config/compton/"
+ "/etc/systemd/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "3assignment.tex"
+ "config"
+ "test_replicate0.cu"
+ "task3.cu"
+ "pbbKernels.cu.h"
+ "report.tex"
+ "hostSkel.cu.h"
+ "spMVmult-flat.fut"
+ "spMV-Mul-kernels.cu.h"
+ "Makefile"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/peter/Documents/DIKU/9semester/aad/3assignment/" (23946 30043 171976 733000) "3assignment.tex" "./" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/aad/" (23946 30043 171976 733000) "material/" "3assignment/" ".gitignore" "README.md" "./" "2assignment/" "1assignment/" ".git/" "../")
+
+ ("/home/peter/.config/" (23946 30027 971885 947000) "gtk-3.0/" "gtk-2.0/" "i3/" "Nextcloud/" "kactivitymanagerdrc" "mimeapps.list" "pulse/" "pavucontrol.ini" "user-dirs.locale" "i3status/" "autostart/" "monitors.xml~" "monitors.xml" "rncbc.org/" "gtk-4.0/" "keepassxc/" "nautilus/" "evolution/" "Slack/" "goa-1.0/" "xfce4/" "user-dirs.dirs" "compton/" "gnome-initial-setup-done" "kdeconnect/" "ksslcertificatemanager" "eog/" "gnome-session/" "./" "libreoffice/" "albert/" "htop/" "ibus/" "lutris/" "menus/" "guitarix/" "update-notifier/" "okularrc" "gedit/" "jack/" "dconf/" "enchant/" "mpd/" "neofetch/" "QtProject.conf" "../" "okularpartrc" "VirtualBox/" "google-chrome/")
+
+ ("/home/peter/" (23946 30045 639991 898000) ".wget-hsts" ".ssh/" "Documents/" ".profile" "Nextcloud/" ".jackdrc" ".zshrc.pre-oh-my-zsh" ".config/" ".cert/" ".Xauthority-l" "peter.ovpn" ".gvfs/" "futhark/" "PlayOnLinux's virtual drives/" ".sudo_as_admin_successful" "Templates/" ".zcompdump-ubulubben-5.4.2" ".zshrc" ".gphoto/" ".xprofile" "Music/" "Videos/" "Desktop/" ".zshrc~" ".xsession-errors" ".bash_history" ".zcompdump" ".gtk-bookmarks" "VirtualBox VMs/" ".backup.key" ".gconf/" ".xprofile~" ".gnupg/" ".local/" ".fehbg" "./" ".Xauthority-c" "Downloads/" ".dbus/" ".PlayOnLinux/" ".pki/" "Pictures/" ".log/" ".mozilla/" "Public/" ".my.key" ".ICEauthority" ".stack/" ".lesshst" ".oh-my-zsh/" ".zsh_history" "azure" ".Xauthority" "Games/" "examples.desktop" "../" "pt.ovpn" ".thunderbird/" ".emacs.d/" "Dockerfile" ".cache/" "snap/")
+
+ ("/home/peter/.config/i3/" (23936 49618 807149 251000) "config" "config~" "./" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/w2-code-handin/spMV-test/" (23944 61547 358375 933000) "test_replicate0.cu" "./" "Makefile" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/w2-code-handin/" (23945 15143 173388 18000) "testPBB.cu" "hostSkel.cu.h" "spMV-test/" "constants.cu.h" "./" "spMV-Mul-kernels.cu.h" "spMV-Mul-main.cu" "Makefile" "../" "pbbKernels.cu.h")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/resubmission/w1-code-handin/task3/" (23945 23064 120440 311000) "task3.cu" "./" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/resubmission/w1-code-handin/" (23945 20303 828832 625000) "spMVmult-flat.fut" "lssp/" "spMVmult-flat" "spMVmult-seq.fut" "./" "spMVmult-flat.c" "task3/" "../" "primes/")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/resubmission/" (23945 20303 812832 626000) "./" "w1-code-handin/" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/" (23945 20288 324833 78000) "mssp.fut" "resubmission/" "assignment1.html" "report/" "w1-code-handin.zip" "./" "w1-code-handin.tar.gz_original" "w1-code-handin/" "../")
+
+ ("/home/peter/Downloads/w2-code-handin/" (23929 34498 0 0) "testPBB.cu" "hostSkel.cu.h" "constants.cu.h" "./" "spMV-Mul-kernels.cu.h" "spMV-Mul-main.cu" "Makefile" "../" "pbbKernels.cu.h")
+
+ ("/home/peter/Downloads/" (23945 13802 501800 406000) "exchangecalendar-v5.0.0-beta1.xpi" "Thomsen.Peter.3.tex" "Medarbejderretningslinjer IT sikkerhed Zangenberg August 2019.pdf" "RKG_logo.eps" "L1-Intro-Org-LH.pdf" "w2-code-handin/" "bitwarden_organization_license.json" "./" "Win10_1903_V1_English_x64.iso" "ubuntu-19.04-desktop-amd64.iso" "github-recovery-codes.txt" "hovedpresentasjon_m.forsider_ehm_v.3.pptx" "spacemacs-theme-20190820.816.tar" "../" "docker-stub.zip")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/" (23945 13802 501800 406000) "report/" "w2-code-handin/" "./" "assignment2.html" "wa2-code.tar.gz" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/" (23944 36659 319142 788000) "spMVmult-flat.fut" "lssp/" "spMVmult-flat" "spMVmult-seq.fut" "./" "spMVmult-flat.c" "task3/" "../" "primes/")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/2assignment/report/" (23943 64860 841563 603000) "report.out" "report.aux" "./" "report.pdf" "report.tex" "report.log" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/" (23943 38121 365021 414000) ".gitignore" "lecture-notes-pmph.pdf" "README.MD" "assignments/" "notes.org" "./" ".git/" "../")
+
+ ("/home/peter/Documents/" (23940 52487 337650 716000) "DIKU/" "./" "zangbird/" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/" (23938 6278 218682 189000) "./" "2assignment/" "1assignment/" "../")
+
+ ("/home/peter/.config/i3status/" (23918 36406 807996 902000) "config" "./" "../")
+
+ ("/home/peter/.emacs.d/" (23936 44499 993868 434000) "settings/" "init.el~" "tramp" "themes/" "elpa/" "auto-save-list/" "snippets/" "./" "ac-comphist.dat" ".mc-lists.el" "futhark-mode/" "init.el" "recentf" "../" "ido.last")
+
+ ("/home/peter/Documents/DIKU/9semester/aad/2assignment/" (23936 43707 380726 644000) "2assignment.pdf" "2assignment.out" "./" "2assignment.log" "2assignment.tex" "2assignment.aux" "../")
+
+ ("/home/peter/.emacs.d/settings/" (23936 43529 599095 210000) "general-config.el" "./" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/lssp/" (23935 22301 80333 710000) "lssp-zeros.fut" "./" "lssp-sorted.fut" "lssp-seq.fut" "lssp.fut" "../" "lssp-same.fut")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/primes/" (23935 22337 168360 174000) "primes-seq.fut" "primes-flat.fut" "primes-naive.fut" "primes-adhoc.fut" "./" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/w1-code-handin/task3/" (23935 29439 875852 366000) "task3.cu" "./" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/" (23936 38341 511636 421000) "aad/" "pmph/" "./" "1assignment/" "../")
+
+ ("/home/peter/.ssh/" (23930 36028 965022 699000) "config" "./" "id_rsa" "id_rsa.pub" "known_hosts" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/pmph/assignments/1assignment/report/" (23930 55989 141174 202000) "report.out" "report.aux" "./" "report.pdf" "report.tex" "report.log" "../")
+
+ ("/home/peter/.emacs.d/futhark-mode/" (23928 64026 571415 541000) "futhark-indent.el" "futhark-highlight.el" ".travis.yml" ".gitignore" "futhark-comint.el" "futhark-mode.el" "futhark-dev.el" "LICENSE" "README.md" "futhark-flycheck.el" "./" "tools/" ".git/" "../")
+
+ ("/etc/systemd/" (23928 52324 255799 626000) "timesyncd.conf" "network/" "resolved.conf" "user.conf" "journald.conf" "system.conf" "./" "logind.conf" "../" "user/" "system/")
+
+ ("/home/peter/.emacs.d/snippets/latex-mode/" (23926 53899 820611 378000) "tex-opgave.tex" "god.tex" "./" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/1assignment/" (23928 6195 417824 220000) "1assignment.log" "1assignment.aux" "1assignment.out" "./" "1assignment.pdf" "1assignment.tex" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/AAD/1assignment/" (23928 7851 674736 422000) "graph.xml" "1assignment.log" "1assignment.aux" "1assignment.out" "./" "1assignment.pdf" "graph.png" "2617.png" "1assignment.tex" "../")
+
+ ("/usr/" (23919 64725 70445 18000) "src/" "share/" "sbin/" "bin/" "lib/" "./" "games/" "include/" "lib32/" "local/" "../" "libexec/")
+
+ ("/home/" (23918 23337 78740 419000) "./" "peter/" "../")
+
+ ("/home/peter/Documents/DIKU/9semester/AAD/" (23927 27988 948225 775000) ".gitignore" "README.md" "./" "1assignment/" ".git/" "../")
+
+ ("/home/peter/.config/compton/" (23920 54820 117385 409000) "./" "compton.conf" "../")
+
+ ("/home/peter/.emacs.d/snippets/" (23926 53616 179080 828000) "latex-mode/" "./" "../")
+
+ ("/home/peter/Documents/DIKU/" (23926 4017 998636 812000) "9semester/" "./" "../" "rkg/")
+
+ ("/home/peter/.ssh/ssh/" (23918 37171 943776 944000) "config" "./" "id_rsa" "id_rsa.pub" "known_hosts" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
