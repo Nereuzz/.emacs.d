@@ -1,7 +1,7 @@
 (setq user-full-name "Peter Thomsen")
 (setq user-mail-address "thomsenpeter1995@hotmail.com")
 
-(setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin" (getenv "PATH")))
+(setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin:/Library/TeX/texbin:" (getenv "PATH")))
 (require 'cl)
 
 ;;Package-manager
@@ -103,7 +103,7 @@
     ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(package-selected-packages
    (quote
-    (exec-path-from-shell auctex-latexmk yasnippet undo-tree spacemacs-theme solarized-theme neotree marmalade magit graphviz-dot-mode gist fsharp-mode emojify autopair auto-complete auctex))))
+    (helm helm-spotify exec-path-from-shell auctex-latexmk yasnippet undo-tree spacemacs-theme solarized-theme neotree marmalade magit graphviz-dot-mode gist fsharp-mode emojify autopair auto-complete auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
