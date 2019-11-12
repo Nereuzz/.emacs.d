@@ -1,7 +1,8 @@
 # Ignore downloaded packages - they will be downloaded on startup
-/elpa/*
-/tramp/*
-/recentf/*
+
+elpa
+tramp
+recentf
 ac-comphist.dat
 ido.last
 auto-save-list

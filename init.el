@@ -20,6 +20,9 @@
                          markdown-mode
                          org
 			 spacemacs-theme
+			 rainbow-mode
+			 multiple-cursors
+			 docker-compose-mode
 			 )
   "Default packages")
 
@@ -138,7 +141,7 @@
      (output-html "xdg-open"))))
  '(package-selected-packages
    (quote
-    (cuda-mode multiple-cursors auctex yasnippet spacemacs-theme markdown-mode magit flycheck autopair auto-complete))))
+    (auctex-latexmk cuda-mode multiple-cursors auctex yasnippet spacemacs-theme markdown-mode magit flycheck autopair auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

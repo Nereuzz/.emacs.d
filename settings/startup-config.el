@@ -7,6 +7,9 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+;; Add line numbers
+(global-linum-mode 1)
+
 
 ;;Remove temporary files
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
