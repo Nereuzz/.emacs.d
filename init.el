@@ -120,6 +120,7 @@
 (add-hook 'after-init-hook '(lambda ()
                               (load "~/.emacs.d/settings/general-config.el")
 			      (load "~/.emacs.d/settings/startup-config.el")
+			      (load "~/.emacs.d/jump-char/jump-char.el")
                               ))
 
 
